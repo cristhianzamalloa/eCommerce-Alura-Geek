@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+.categoria-productosConjunto {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.categoria-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc((100% - 5rem)/2);
+    padding: 0 1.5rem 1rem 1rem;
+}
+
+.categoria-producto-imagen {
+    height: 174px;
+    width: 156px;
+    margin-bottom: 0.5rem;
+}
+
+/*CATEGORIA STAR WARS*/
+.categoria-producto-imagen--starWarsUno {
+    background: url("../../images/Star\ Wars/1-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsDos {
+    background: url("../../images/Star\ Wars/2-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsTres {
+    background: url("../../images/Star\ Wars/3-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsCuatro {
+    background: url("../../images/Star\ Wars/4-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsCinco {
+    background: url("../../images/Star\ Wars/5-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsSeis {
+    background: url("../../images/Star\ Wars/6-StarWars.jpg") no-repeat center / cover;
+}
+
+/*CATEGORIA CONSOLAS*/
+.categoria-producto-imagen--consolaUno {
+    background: url("../../images/Consolas/1-Consola.jpeg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaDos {
+    background: url("../../images/Consolas/2-Consola.png") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaTres {
+    background: url("../../images/Consolas/3-Consola.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaCuatro {
+    background: url("../../images/Consolas/4-Consola.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaCinco {
+    background: url("../../images/Consolas/5-Consola.png") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaSeis {
+    background: url("../../images/Consolas/6-Consola.jpeg") no-repeat center / cover;
+}
+
+/*CATEGORIA VIDEO JUEGOS*/
+.categoria-producto-imagen--videoJuegoUno {
+    background: url("../../images/Video\ Juegos/1-VideoJuego.jpg") no-repeat center / 90%;
+}
+
+.categoria-producto-imagen--videoJuegoDos {
+    background: url("../../images/Video\ Juegos/2-VideoJuego.jpg") no-repeat center / 90%;
+}
+
+.categoria-producto-imagen--videoJuegoTres {
+    background: url("../../images/Video\ Juegos/3-VideoJuego.jpg") no-repeat center / 90%;
+}
+
+.categoria-producto-imagen--videoJuegoCuatro {
+    background: url("../../images/Video\ Juegos/4-VideoJuego.jpg") no-repeat center / 90%;
+}
+
+.categoria-producto-imagen--videoJuegoCinco {
+    background: url("../../images/Video\ Juegos/5-VideoJuego.jpg") no-repeat center / 90%;
+}
+
+.categoria-producto-imagen--videoJuegoSeis {
+    background: url("../../images/Video\ Juegos/6-VideoJuego.jpg") no-repeat center / 90%;
+}
+
+/*CONFIGURACIÓN NOMBRE, PRECIO Y BOTÓN*/
+.categoria-producto-nombre {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.categoria-producto-precio {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.categoria-producto-boton {
+    border: none;
+    background: none;
+    color: #2a7ae4;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+}
+
+@media screen and (min-width:450px) {
+    .categoria-productosConjunto{
+        padding-left: 5rem;
+    }
+
+    .categoria-producto {
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        width: calc((100% - 16rem)/6);
+    }   
+
+    /*CONFIGURACIÓN NOMBRE, PRECIO Y BOTÓN --- DESKTOP*/
+    .categoria-producto-nombre {
+        font-size: 14px;
+    }
+
+    .categoria-producto-precio {
+        font-size: 16px;
+    }
+
+    .categoria-producto-boton {
+        font-size: 16px;
+    }
+}

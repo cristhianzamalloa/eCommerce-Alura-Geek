@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+
+.footer-contacto {
+    align-items: center;
+    background: #eaf2fd;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 3.125rem;
+    width: 11rem;
+    padding: 1.625rem;
+}
+
+.footer-lista{
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.footer-item{
+    padding-bottom: 1rem;
+}
+
+.footer-formulario {
+    text-align: left;
+    width: calc(100% - 2rem);
+}
+
+.footer-formulario h3 {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.footer-input-nombre {
+    border: none;
+    border-bottom: 2px solid #c8c8c8;
+    font-family: "Raleway";
+    font-size: 12px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0 3.4375rem 1.25rem;
+    width: calc(100% - 1.5rem);
+}
+
+.footer-input-mensaje {
+    border: none;
+    border-bottom: 2px solid #c8c8c8;
+    font-family: "Raleway";
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0 5.125rem 1.25rem;
+    width: calc(100% - 1.5rem);   
+}
+
+.enviar {
+    background: #2a7ae4;
+    border: none;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-autor {
+    background: linear-gradient(45deg, #36042b, #0f072d);
+    color: white;
+    font-family: "Raleway";
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    
+}
+
+@media screen and (min-width:450px) {
+    .footer-contacto {
+        align-items: start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 23rem;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .footer-logo {
+        padding: 4rem 7rem 4rem 6rem;
+    }
+    
+    .footer-lista {
+        padding: 4rem 7rem 4rem 0rem;
+    }
+
+    .footer-item{
+        padding-bottom: 1.5rem;
+    }
+    
+    .footer-formulario {
+        text-align: left;
+        width: 35rem;
+        padding-top: 4rem;
+    }
+    
+    .footer-formulario h3 {
+        padding-bottom: 0.5rem;
+    }
+    
+    .footer-input-nombre {        
+        margin-bottom: 1rem;
+        padding: 1rem 0 1.9375rem 1.5rem;
+        width: 35rem;
+    }
+    
+    .footer-input-mensaje {
+        padding: 1rem 0 2rem 1.5rem;
+        width: 35rem;   
+    }
+    
+    .enviar {
+        padding: 1rem;
+    }
+}

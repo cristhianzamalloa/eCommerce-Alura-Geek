@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+.categoria {
+    font-family: "Raleway";
+    height: 40rem;
+    overflow: hidden;
+}
+
+#consolas, #videoJuegos {
+    height: 36.5rem;
+}
+
+@media screen and (min-width:450px) {
+
+    .categoria {
+        height: 24rem;
+    }
+
+    #consolas, #videoJuegos {
+        height: 23rem;
+    }
+
+
+}

@@ -1,28 +1,207 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Geek</title>
         <link rel="stylesheet" href="reset.css">
-        
+        <link rel="stylesheet" href="cabecera.css">
+        <link rel="stylesheet" href="./home/banner.css">
+        <link rel="stylesheet" href="./home/categorias/categoria.css">
+        <link rel="stylesheet" href="./home/categorias/categoria-parteSuperior.css">
+        <link rel="stylesheet" href="./home/categorias/categoria-productos.css">
+        <link rel="stylesheet" href="footer.css">
         
     </head>
 
     <body>
-        <header>
-            
+        <header class="cabecera">
+            <div class="cabecera-logoInput">
+                <img class="cabecera-logo" src="./images/header/Logo.png" alt="logo">
+                <input class="cabecera-buscador" type="search" placeholder="¿Qué deseas buscar?"/>
+            </div>  
+            <button class="cabecera-boton">Login</button>
+            <img class="cabecera-lupa" src="./images/header/Lupa.png" alt="lupa">
         </header>
         <main>
-        
-
+            <section class="banner">
+                <div class="banner-imagen"></div>
+                <div class="banner-interno">
+                    <h2 class="banner-titulo" >Febrero Promocional</h2>
+                    <p class="banner-descripcion">Productos seleccionados con 33% de descuento</p>
+                    <button class="banner-boton" >Ver Consolas</button>
+                </div>
+            </section>
+            <section class="categoria" id="starWars">
+                <fieldset class="categoria-parteSuperior">
+                    <h2 class="categoria-titulo">Star Wars</h2>
+                    <div class="categoria-botonVer">
+                        <h3 class="categoria-ver">Ver todo</h3>
+                        <img class="categoria-flecha">
+                    </div>
+                </fieldset>
+                <fieldset class="categoria-productosConjunto">
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--starWarsUno"></div>
+                        <span class="categoria-producto-nombre">LEGO Luke Skywalker Helmet</span>
+                        <span class="categoria-producto-precio">$59.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--starWarsDos"></div>
+                        <span class="categoria-producto-nombre">LEGO Darth Vader Helmet</span>
+                        <span class="categoria-producto-precio">$69.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--starWarsTres"></div>
+                        <span class="categoria-producto-nombre">LEGO AT-AT The Empire Strikes Back</span>
+                        <span class="categoria-producto-precio">$799.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--starWarsCuatro"></div>
+                        <span class="categoria-producto-nombre">LEGO The Mandalorian's N-1 Starfighter</span>
+                        <span class="categoria-producto-precio">$59.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--starWarsCinco"></div>
+                        <span class="categoria-producto-nombre">LEGO Star Wars Mos Eisley Cantina</span>
+                        <span class="categoria-producto-precio">$359.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--starWarsSeis"></div>
+                        <span class="categoria-producto-nombre">LEGO Boba Fett's Throne Room</span>
+                        <span class="categoria-producto-precio">$99.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                </fieldset>       
+            </section>
+            <section class="categoria" id="consolas">
+                <fieldset class="categoria-parteSuperior">
+                    <h2 class="categoria-titulo">Consolas</h2>
+                    <div class="categoria-botonVer">
+                        <h3 class="categoria-ver">Ver todo</h3>
+                        <img class="categoria-flecha">
+                    </div>
+                </fieldset>
+                <fieldset class="categoria-productosConjunto">
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--consolaUno"></div>
+                        <span class="categoria-producto-nombre">Play Station 5</span>
+                        <span class="categoria-producto-precio">$849.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--consolaDos"></div>
+                        <span class="categoria-producto-nombre">Xbox Serie X</span>
+                        <span class="categoria-producto-precio">$749.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--consolaTres"></div>
+                        <span class="categoria-producto-nombre">Nintendo Switch</span>
+                        <span class="categoria-producto-precio">$299.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--consolaCuatro"></div>
+                        <span class="categoria-producto-nombre">Play Station 4</span>
+                        <span class="categoria-producto-precio">$519.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--consolaCinco"></div>
+                        <span class="categoria-producto-nombre">Nintendo Switch Lite</span>
+                        <span class="categoria-producto-precio">$279.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--consolaSeis"></div>
+                        <span class="categoria-producto-nombre">Xbox Serie S</span>
+                        <span class="categoria-producto-precio">$291.90</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                </fieldset>       
+            </section>
+            <section class="categoria" id="videoJuegos">
+                <fieldset class="categoria-parteSuperior">
+                    <h2 class="categoria-titulo">Video Juegos</h2>
+                    <div class="categoria-botonVer">
+                        <h3 class="categoria-ver">Ver todo</h3>
+                        <img class="categoria-flecha">
+                    </div>
+                </fieldset>
+                <fieldset class="categoria-productosConjunto">
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--videoJuegoUno"></div>
+                        <span class="categoria-producto-nombre">FIFA 22 PS5</span>
+                        <span class="categoria-producto-precio">$24.64</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--videoJuegoDos"></div>
+                        <span class="categoria-producto-nombre">NBA 2K22 - PS5</span>
+                        <span class="categoria-producto-precio">$24.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--videoJuegoTres"></div>
+                        <span class="categoria-producto-nombre">NHL 22 - PS5</span>
+                        <span class="categoria-producto-precio">$299.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--videoJuegoCuatro"></div>
+                        <span class="categoria-producto-nombre">MLB 22 - PS5</span>
+                        <span class="categoria-producto-precio">$59.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--videoJuegoCinco"></div>
+                        <span class="categoria-producto-nombre">WWE 2K22 PS5</span>
+                        <span class="categoria-producto-precio">$19.99</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                    <div class="categoria-producto">
+                        <div class="categoria-producto-imagen categoria-producto-imagen--videoJuegoSeis"></div>
+                        <span class="categoria-producto-nombre">Mortal Kombat PS5</span>
+                        <span class="categoria-producto-precio">$27.69</span>
+                        <button class="categoria-producto-boton">Ver producto</button>
+                    </div>
+                </fieldset>       
+            </section>
         </main>
         <footer>
-            <p>Desarrollado por Cristhian Zamalloa</br>2022</p>
+            <div class="footer-contacto">
+                <img class="footer-logo" src="./images/header/Logo.png" alt="logo">
+                <ul class="footer-lista">
+                    <li class="footer-item">Quiénes somos</li>
+                    <li class="footer-item">Política de privacidad</li>
+                    <li class="footer-item">Programa de fidelidad</li>
+                    <li class="footer-item">Nuestras tiendas</li>
+                    <li class="footer-item">Quiero ser franquiciado</li>
+                    <li class="footer-item">Anuncie aquí</li>
+                </ul>
+                <form class="footer-formulario">
+                    <h3>Hable con nosotros</h3>
+                    <div class="footer-input">
+                        <input type="text" id="nombre" placeholder="Nombre" class="footer-input-nombre">
+                    </div>
+                    <div class="footer-input">
+                        <textarea type="text" id="mensaje" placeholder="Escribe tu mensaje" class="footer-input-mensaje"></textarea> 
+                    </div>
+                    <button class="enviar">Enviar mensaje</button>
+                </form>
+            </div>
+            
+            <div class="footer-autor">
+            <p>Desarrollado por Cristhian Zamalloa</br>Abril 2022</p>
+            </div>
         </footer>
-        <script src="#"></script>
+        
     </body>
 
 </html>
