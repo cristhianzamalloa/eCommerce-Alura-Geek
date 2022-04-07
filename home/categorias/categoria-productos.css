@@ -16,7 +16,7 @@
 
 .categoria-producto-imagen {
     height: 10.875rem;
-    width: 11.375rem;
+    width: 100%;
     margin-bottom: 0.5rem;
 }
 
@@ -116,11 +116,11 @@
     font-weight: 700;
     text-align: left;
     margin-bottom: 1rem;
+    padding: 0;
 }
 
 @media screen and (min-width:650px) {
     .categoria-productosConjunto {
-        display: flex;
         flex-wrap: wrap;    
         padding-left: 2rem;
     }
@@ -134,9 +134,8 @@
     }
 
     .categoria-producto-imagen {
-        height: 10.875rem;
-        width: 12.79rem;
         margin-bottom: 0.5rem;
+        width: 100%;
     }
     
     .categoria-producto-nombre {

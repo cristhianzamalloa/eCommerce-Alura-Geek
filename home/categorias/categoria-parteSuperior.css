@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    width: 92.4%;
+    width: 91.11%;
 }
 
 .categoria-titulo {
@@ -16,13 +16,14 @@
 
 .categoria-botonVer {
     display: flex;    
-    width: 21%;
+    width: 25%;
 }
 
 .categoria-ver {
     color: #2a7ae4;
     font-size: 0.875rem;
     margin-right: 0.45rem;
+    
 }
 
 .categoria-flecha {
