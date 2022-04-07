@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 
 .footer-contacto {
@@ -7,19 +7,27 @@
     display: flex;
     flex-direction: column;
     font-family: "Raleway";
-    font-size: 16px;
+    font-size: 1rem;
+    height: 21%;
     text-align: center;
+    width: 100%;
 }
 
+.footer-logoLista {
+    height: 47.02%;
+    width: 91.11%;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+
 .footer-logo {
-    height: 3.125rem;
-    width: 11rem;
-    padding: 1.625rem;
+    height: 19.23%;
+    width: 53.66%;
+    padding-bottom: 1rem;
 }
 
 .footer-lista{
     font-weight: 500;
-    padding-bottom: 2rem;
 }
 
 .footer-item{
@@ -28,7 +36,9 @@
 
 .footer-formulario {
     text-align: left;
-    width: calc(100% - 2rem);
+    padding: 0 1rem 1rem 1rem;
+    width: 91.11%;
+    
 }
 
 .footer-formulario h3 {
@@ -40,20 +50,20 @@
     border: none;
     border-bottom: 2px solid #c8c8c8;
     font-family: "Raleway";
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-bottom: 1rem;
-    padding: 0.5rem 0 3.4375rem 1.25rem;
-    width: calc(100% - 1.5rem);
+    padding: 0.5rem 0 1.9375rem 0.75rem;
+    width: calc(100% - 1rem);
 }
 
 .footer-input-mensaje {
     border: none;
     border-bottom: 2px solid #c8c8c8;
     font-family: "Raleway";
-    font-size: 12px;
+    font-size: 0.75rem; 
     margin-bottom: 0.5rem;
-    padding: 0.5rem 0 5.125rem 1.25rem;
-    width: calc(100% - 1.5rem);   
+    padding: 0.5rem 0 2.875rem 0.75rem;
+    width: calc(100% - 1rem);   
 }
 
 .enviar {
@@ -61,8 +71,8 @@
     border: none;
     color: #ffffff;
     font-family: "Raleway";
-    font-size: 16px;
-    padding: 1.5rem;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
     margin-bottom: 1rem;
 }
 
@@ -77,47 +87,97 @@
     
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:650px) {
+    
     .footer-contacto {
-        align-items: start;
-        flex-wrap: wrap;
         flex-direction: row;
-        height: 23rem;
-        justify-content: start;
-        text-align: start;
+        justify-content: space-between;
+        height: 47.4%;
+    }
+    
+    .footer-logoLista {
+        height: 69.78%;
+        width: 33%;
+        text-align: left;
+        padding: 2rem 0rem 0rem 0rem;
     }
 
     .footer-logo {
-        padding: 4rem 7rem 4rem 6rem;
-    }
-    
-    .footer-lista {
-        padding: 4rem 7rem 4rem 0rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
     }
 
-    .footer-item{
+    .footer-lista {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-item {
         padding-bottom: 1.5rem;
+    }
+
+    .footer-formulario {
+        height: 69.78%;
+        width: 56.51%;
+        padding-right: 2rem;
+    }
+
+    .footer-input-nombre {
+        padding: 0.5rem 0 2rem 0.75rem;
+        width: 100%;
+    }
+
+    .footer-input-mensaje {
+        border: none;
+        border-bottom: 2px solid #c8c8c8;
+        font-family: "Raleway";
+        font-size: 0.75rem; 
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 0 2.875rem 0.75rem;
+        width: 100%;   
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .footer-contacto {
+        align-items: initial;
+        flex-direction: row;
+        padding: 4rem 9.5rem;
+        width: 78.89%;
+        
+    }
+
+    .footer-logoLista {
+        display: flex;
+        width: 40.85%;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-logo {
+        width: 41.16%;
+        padding: 0;
+    }
+
+    .footer-lista {
+        padding: 0;
+        width: 41.16%;
     }
     
     .footer-formulario {
-        text-align: left;
-        width: 35rem;
-        padding-top: 4rem;
-    }
-    
-    .footer-formulario h3 {
-        padding-bottom: 0.5rem;
+        padding: 0;
+        width: 51.94%;
     }
     
     .footer-input-nombre {        
-        margin-bottom: 1rem;
-        padding: 1rem 0 1.9375rem 1.5rem;
-        width: 35rem;
+        font-size: 0.875rem;
+        width: calc(100% - 0.75rem);
     }
-    
+
     .footer-input-mensaje {
-        padding: 1rem 0 2rem 1.5rem;
-        width: 35rem;   
+        font-size: 1rem; 
+        padding: 1rem 0 2.875rem 0.75rem;
+        width: calc(100% - 0.75rem);   
     }
     
     .enviar {

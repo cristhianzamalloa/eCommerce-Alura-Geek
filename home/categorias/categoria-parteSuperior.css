@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 .categoria-parteSuperior {
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    width: 100%;
+    width: 92.4%;
 }
 
 .categoria-titulo {
     color: #464646;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
+    width: 60%;
 }
 
 .categoria-botonVer {
-    display: flex;
-    justify-content: start;
-    padding-right: 2rem;
+    display: flex;    
+    width: 21%;
 }
 
 .categoria-ver {
     color: #2a7ae4;
-    font-size: 14px;
-    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    margin-right: 0.45rem;
 }
 
 .categoria-flecha {
@@ -33,32 +33,39 @@
     height: 1rem;
     width: 1rem;
 }
-
-@media screen and (min-width:450px) {
-
+@media screen and (min-width:650px) {
     .categoria-parteSuperior {
-        padding-left: 6rem;
-        padding-right: 15rem;
-        padding-top: 4rem;   
-    }
-
-    .categoria-titulo {
-        color: #464646;
-        font-size: 32px;
-        font-weight: 700;
+        padding: 2rem 2rem 1rem 2rem;
+        width: 93%;
     }
 
     .categoria-botonVer {
-        padding-right: 12rem;
+        justify-content: flex-end;
     }
-
+    
     .categoria-ver {
-        font-size: 16px;
+        font-size: 1rem;
+        margin-right: 0.75rem;   
+    }
+}
+
+@media screen and (min-width:1180px) {
+
+    .categoria-parteSuperior {
+        justify-content: space-between;
+        padding: 4rem 9.5rem 1rem 9.5rem; 
+        width: 78.68%;   
     }
 
-    .categoria-flecha {
-        background-size: 100%;
+    .categoria-titulo {
+        font-size: 2rem;  
+        width: 60%;      
     }
+
+    .categoria-botonVer {
+        width: 15%;
+    }
+
 
 
 

@@ -3,19 +3,20 @@
 .categoria-productosConjunto {
     display: flex;
     flex-wrap: wrap;    
+    padding-left: 1rem;
 }
 
 .categoria-producto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc((100% - 5rem)/2);
-    padding: 0 1.5rem 1rem 1rem;
+    width: calc((100% - 2rem)/2);
+    padding-right: 1rem;
 }
 
 .categoria-producto-imagen {
-    height: 174px;
-    width: 156px;
+    height: 10.875rem;
+    width: 11.375rem;
     margin-bottom: 0.5rem;
 }
 
@@ -71,38 +72,38 @@
 
 /*CATEGORIA VIDEO JUEGOS*/
 .categoria-producto-imagen--videoJuegoUno {
-    background: url("../../images/Video\ Juegos/1-VideoJuego.jpg") no-repeat center / 90%;
+    background: url("../../images/Video\ Juegos/1-VideoJuego.jpg") no-repeat center / 72%;
 }
 
 .categoria-producto-imagen--videoJuegoDos {
-    background: url("../../images/Video\ Juegos/2-VideoJuego.jpg") no-repeat center / 90%;
+    background: url("../../images/Video\ Juegos/2-VideoJuego.jpg") no-repeat center / 72%;
 }
 
 .categoria-producto-imagen--videoJuegoTres {
-    background: url("../../images/Video\ Juegos/3-VideoJuego.jpg") no-repeat center / 90%;
+    background: url("../../images/Video\ Juegos/3-VideoJuego.jpg") no-repeat center / 72%;
 }
 
 .categoria-producto-imagen--videoJuegoCuatro {
-    background: url("../../images/Video\ Juegos/4-VideoJuego.jpg") no-repeat center / 90%;
+    background: url("../../images/Video\ Juegos/4-VideoJuego.jpg") no-repeat center / 72%;
 }
 
 .categoria-producto-imagen--videoJuegoCinco {
-    background: url("../../images/Video\ Juegos/5-VideoJuego.jpg") no-repeat center / 90%;
+    background: url("../../images/Video\ Juegos/5-VideoJuego.jpg") no-repeat center / 72%;
 }
 
 .categoria-producto-imagen--videoJuegoSeis {
-    background: url("../../images/Video\ Juegos/6-VideoJuego.jpg") no-repeat center / 90%;
+    background: url("../../images/Video\ Juegos/6-VideoJuego.jpg") no-repeat center / 72%;
 }
 
 /*CONFIGURACIÓN NOMBRE, PRECIO Y BOTÓN*/
 .categoria-producto-nombre {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .categoria-producto-precio {
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -111,33 +112,65 @@
     border: none;
     background: none;
     color: #2a7ae4;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     text-align: left;
-    padding: 0;
+    margin-bottom: 1rem;
 }
 
-@media screen and (min-width:450px) {
-    .categoria-productosConjunto{
-        padding-left: 5rem;
+@media screen and (min-width:650px) {
+    .categoria-productosConjunto {
+        display: flex;
+        flex-wrap: wrap;    
+        padding-left: 2rem;
+    }
+    
+    .categoria-producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc((100% - 4rem)/4);
+        padding-right: 1rem;
     }
 
-    .categoria-producto {
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-        width: calc((100% - 16rem)/6);
-    }   
-
-    /*CONFIGURACIÓN NOMBRE, PRECIO Y BOTÓN --- DESKTOP*/
+    .categoria-producto-imagen {
+        height: 10.875rem;
+        width: 12.79rem;
+        margin-bottom: 0.5rem;
+    }
+    
     .categoria-producto-nombre {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .categoria-producto-precio {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .categoria-producto-boton {
-        font-size: 16px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .categoria-productosConjunto{
+        padding-left: 9.5rem;
+        padding-right: 9.5rem;
+    }
+
+    .categoria-producto {
+        width: calc((100% - 5rem)/6);
+        padding-right: 1rem;
+    }   
+
+    .categoria-producto-imagen {
+        height: 10.05rem;
+        width: initial;
+        margin-bottom: 0.5rem;
+    }
+
+    #categoria-producto-ultimo {
+        padding-right: 0;
     }
 }
