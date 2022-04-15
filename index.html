@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Geek</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="bases.css">
         <link rel="stylesheet" href="cabecera.css">
-        <link rel="stylesheet" href="./home/banner.css">
-        <link rel="stylesheet" href="./home/categorias/categoria.css">
-        <link rel="stylesheet" href="./home/categorias/categoria-parteSuperior.css">
-        <link rel="stylesheet" href="./home/categorias/categoria-productos.css">
+        <link rel="stylesheet" href="./css/banner.css">
+        <link rel="stylesheet" href="./css/categorias/categoria.css">
+        <link rel="stylesheet" href="./css/categorias/categoria-parteSuperior.css">
+        <link rel="stylesheet" href="./css/categorias/categoria-productos.css">
         <link rel="stylesheet" href="footer.css">
+        
         
     </head>
 
@@ -27,9 +30,9 @@
             <section class="banner">
                 <div class="banner-imagen"></div>
                 <div class="banner-interno">
-                    <h2 class="banner-titulo" >Febrero Promocional</h2>
+                    <h2 class="banner-titulo" >Abril Promocional</h2>
                     <p class="banner-descripcion">Productos seleccionados con 33% de descuento</p>
-                    <button class="banner-boton" >Ver Consolas</button>
+                    <button class="banner-boton boton" >Ver Consolas</button>
                 </div>
             </section>
             <section class="categoria" id="starWars">
@@ -188,14 +191,12 @@
                     </ul>
                 </div>
                 <form class="footer-formulario">
-                    <h3>Hable con nosotros</h3>
-                    <div class="footer-input">
-                        <input type="text" id="nombre" placeholder="Nombre" class="footer-input-nombre">
+                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>
+                    <div class="footer-formulario-input">
+                        <input type="text" class="footer-formulario-inputCasilla" id="nombre" placeholder="Nombre">                  
+                        <textarea type="text" class="footer-formulario-inputCasilla" id="mensaje" placeholder="Escribe tu mensaje"></textarea> 
                     </div>
-                    <div class="footer-input">
-                        <textarea type="text" id="mensaje" placeholder="Escribe tu mensaje" class="footer-input-mensaje"></textarea> 
-                    </div>
-                    <button class="enviar">Enviar mensaje</button>
+                    <button class="footer-enviar boton">Enviar mensaje</button>
                 </form>
             </div>
             

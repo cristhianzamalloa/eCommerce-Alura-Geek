@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-
 .banner-imagen {
     background: url("../images/banner.jpg") no-repeat center / cover;
     height: 12rem;
-    width: 100%;   
+    width: 100%
 }
 
 .banner-interno {
     color: #FFFFFF;
-    font-family: "Raleway";
     left: 1rem;
     position: absolute;
     top: 9.375rem;
@@ -23,16 +20,6 @@
     font-size: 0.875rem;
     font-weight: 600;
     margin: 0.5rem 0;
-}
-
-.banner-boton {
-    background: #2A7AE4;
-    border: none;
-    color: #FFFFFF;
-    font-family: "Raleway";
-    font-size: 0.875rem;
-    font-weight: 600;
-    padding: 0.75rem 1rem;
 }
 
 @media screen and (min-width:650px) {
@@ -53,11 +40,6 @@
         font-size: 1.375rem;
         margin: 1rem 0;
     }
-
-    .banner-boton {
-        font-size: 0.875rem;
-        padding: 0.75rem 1rem;
-    }   
 }
 
 @media screen and (min-width:1180px) {
@@ -66,7 +48,7 @@
         top: 16.562rem;
     }
        
-    .banner-boton {
+    .banner-boton { 
         font-size: 1rem;
         padding: 1rem;
     }   

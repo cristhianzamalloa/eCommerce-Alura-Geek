@@ -1,0 +1,30 @@
+/* --DEFINICION DE VARIABLES -- */
+:root {
+    --raleway: 'Raleway', sans-serif;
+
+    --boton-azul: #2A7AE4; 
+}
+
+body {
+    font-family: var(--raleway);
+}
+
+/* Padding para Mobile. Pendiente de ver cómo se hace con Desktop, ya que el porcentaje es de 10.56  
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}*/
+
+/* Desktop, padding vertical es de 16px, font-size: 16px  */
+.boton {
+    background: var(--boton-azul);
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+
+
