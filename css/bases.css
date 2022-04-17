@@ -1,8 +1,11 @@
 /* --DEFINICION DE VARIABLES -- */
 :root {
-    --raleway: 'Raleway', sans-serif;
-
+    --altura-cabecera-desktop: 7.95rem;
     --boton-azul: #2A7AE4; 
+    --fuente-azul: #2A7AE4;
+    --titulo-gris: #464646;
+    --raleway: 'Raleway', sans-serif;
+    
 }
 
 body {
@@ -24,6 +27,18 @@ body {
     font-size: 0.875rem;
     font-weight: 600;
     padding: 0.75rem 1rem;
+}
+
+.botonVer {
+    background: none;
+    border: none;
+    color: var(--fuente-azul);
+    font-size: .875rem;
+    font-weight: 700; 
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 

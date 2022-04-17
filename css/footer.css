@@ -49,7 +49,6 @@
     width: calc(100vw - 2rem);
 }
 
-
 .footer-formulario-inputCasilla {
     border: none;
     border-bottom: 2px solid #c8c8c8;
@@ -63,14 +62,14 @@
     margin-top: 1rem;
 }
 
-.footer-formulario-inputCasilla::placeholder {
+.footer-formulario-inputCasilla::-webkit-input-placeholder {
     left: .875rem;
     position: absolute;
     font-size: .75rem; 
-    top: 0.5rem;
+    top: .5rem;
 }
 
-#mensaje::placeholder{
+#mensaje::-webkit-input-placeholder{
     font-size: 1rem;
 }
 
@@ -138,8 +137,7 @@
         align-items: initial;
         flex-direction: row;
         padding: 4rem 9.5rem;
-        width: 78.89%;
-        
+        width: 78.89%;        
     }
 
     .footer-logoLista {
@@ -166,6 +164,10 @@
     
     .footer-formulario-input {
         width: calc(51.94vw - 9.5rem);
+    }
+
+    .footer-enviar {
+        margin-bottom: 0rem;
     }
     
 }

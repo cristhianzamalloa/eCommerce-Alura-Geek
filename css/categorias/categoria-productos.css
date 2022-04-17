@@ -106,17 +106,6 @@
     margin-bottom: 0.5rem;
 }
 
-.categoria-producto-boton {
-    border: none;
-    background: none;
-    color: #2a7ae4;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 1rem;
-    padding: 0;
-}
-
 @media screen and (min-width:650px) {
     .categoria-productosConjunto {
         flex-wrap: wrap;    
