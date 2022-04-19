@@ -12,25 +12,17 @@
 }
 
 .login-formulario {
-    margin-right: 0.875rem;
     width: 100%;
 }
 
 .login-input {
-    border: none;
-    border-bottom: 2px solid #c8c8c8;
-    border-radius: 4px;
     height: 2.5625rem;
-    margin-bottom: 1rem;
-    padding-left: 0.875rem;
-    padding-right: 0;
+    padding: .82rem 0 0 .875rem;
     width: 100%;
 }
 
-.login-input::placeholder {
-    left: 0.875rem;
-    position: absolute;
-    top: 0.5rem;
+.login-input::-webkit-input-placeholder {
+    transform: translate(0, -.75rem);
 }
 
 .login-boton {
@@ -38,6 +30,10 @@
 }
 
 @media screen and (min-width:650px) {
+    .login{
+        padding: 2.8125rem 32.16% 3.8125rem 32.16%;
+    }
+
     .login-formulario {
         align-items: center;
         display: flex;
@@ -45,13 +41,13 @@
         margin-right: 0.875rem;
         width: 100%;
     }
-
-    .login-input {
-        width: 17.1875rem;
-    }
 }
 
 @media screen and (min-width:1180px) {
+    .login {
+        padding: 5.6875rem 35%;
+    }
+    
     .login-titulo {
         font-size: 1.125rem;
         margin-bottom: 1.5rem;
@@ -60,18 +56,11 @@
     .login-input {
         height: 3.95rem;
         margin-left: 0.875rem;
-        margin-bottom: 1.5rem;
-        padding-left: 0.875rem;
-        padding-right: 0;
         width: calc(26.4375rem - 0.875rem);
-    }
-
-    .login-input::placeholder {
-        top: 1.125rem;
     }
 
     .login-boton {        
         height: 3.1875rem;  
-        width: 26.4375rem;
+        width: calc(26.4375rem - 0.875rem);
     }
 }

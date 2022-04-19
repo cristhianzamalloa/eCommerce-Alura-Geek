@@ -15,7 +15,6 @@ body {
     font-family: var(--raleway);
 }
 
-/* Desktop, padding vertical es de 16px, font-size: 16px  */
 .boton {
     background: var(--boton-azul);
     border: none;
@@ -23,6 +22,11 @@ body {
     font-size: 0.875rem;
     font-weight: 600;
     padding: 0.75rem 1rem;
+}
+
+.boton a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .botonVer {
@@ -61,8 +65,7 @@ body {
 ::-webkit-input-placeholder {
     font-family: var(--raleway);
     font-size: .75rem;
-    position: absolute;
-    top: .5rem;
+    transform: translate(0, -1.75rem);
 }
 
 :focus::placeholder {
@@ -84,8 +87,7 @@ body {
 .textArea::-webkit-input-placeholder {
     font-family: var(--raleway);
     font-size: 1rem;
-    position: absolute;
-    top: 1rem;
+    transform: none;
 }
 
 .tituloH2 {

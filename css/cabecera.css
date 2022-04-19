@@ -21,7 +21,7 @@
 .cabecera-boton {
     border: 1px solid #2A7AE4;
     border-radius: 2rem;
-    color: #2A7AE4;
+    color: var(--fuente-azul);
     font-size: 0.875rem;
     font-weight: 600;         
     padding: 1rem 3rem 1rem 3rem;
@@ -41,11 +41,11 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
-        width: 53%;
+        width: 60%;
     }
 
     .cabecera-logo {
-        width: 25%;
+        width: 85%;
     }
 
     .cabecera-buscador {
@@ -54,18 +54,20 @@
         border-radius: 20px;
         display: initial;
         height: 2.5rem;
-        padding-left: 1rem;        
+        margin-bottom: 0;
+        padding: 0 0 0 1rem;       
         width: 67%;
     } 
 
-    .cabecera-buscador::placeholder {
+    .cabecera-buscador::-webkit-input-placeholder {
         color: #A2A2A2;
         font-size: 0.875rem;
         font-weight: 400;
+        transform: translate(0, 0);
     }
 
     .cabecera-lupa {
-        left: 49%;
+        left: 55%;
         opacity: 50%;
         position: absolute;
         width: 2%;
@@ -84,10 +86,6 @@
     
     .cabecera-logoInput {
         width: 53%;
-    }
-
-    .cabecera-logo {
-        width: 29%;
     }
 
     .cabecera-buscador {
