@@ -1,0 +1,115 @@
+main {
+    padding: 1rem;
+    background: var(--background-gris);
+}
+
+.agregar-producto {
+    height: 30rem;
+}
+
+.agregar-productoImagen {
+    background: var(--background-campo-imagenesInsertadas) url(../images/Simbolo.mas.png) 50% 30% no-repeat;
+    border: 1px dashed var(--borde-gris);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    height: 25.92%;
+    width: 100%;
+}
+
+.agregar-productoImagen::-webkit-input-placeholder {
+    font-size: .875rem;
+    font-weight: 400;
+    left: 20%;
+    position: absolute;
+    top: 60%;
+}
+
+.agregar-productoContainer{
+    display: none;
+}
+
+.agregar-productoForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.agregar-productoBoton{
+    height: 3.1875rem;
+}
+
+@media screen and (min-width:650px) {
+    main {
+        padding: 2rem;
+    }
+
+    .agregar-producto{
+        height: 30rem;
+    }
+
+    .agregar-productoImagen {
+        display: none;
+    }
+
+    .agregar-productoContainer{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        height: 27%;
+    }
+
+    .agregar-productoImagenDos{
+        background: var(--background-campo-imagenesInsertadas) url(../images/Adicionar.Imagen.png) 50% 30% no-repeat;
+        border: 1px dashed var(--borde-gris);
+        box-sizing: border-box;
+        padding: 2rem;
+        height: 100%;
+        width: 36%;
+    }
+
+    .agregar-productoImagenDos::-webkit-input-placeholder {
+        position: relative;
+        top: 1rem;
+        white-space: pre-line;
+        text-align: center;
+    }
+
+    .agregar-productoCondicional {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .agregar-productoArchivo {
+        border: 1px solid var(--fuente-azul);
+        border-radius: .25rem;
+        color: var(--fuente-azul);
+        font-size: .875rem;
+        font-weight: 600;         
+        height: 3.1875rem;
+        padding: 1rem;
+        width: 31%;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    main{
+        padding: 4rem 9.5rem 4rem 9.5rem;
+    }
+    
+    .agregar-producto{
+        width: 35rem;
+        padding: 0 18.03rem;       
+    }
+
+    .agregar-productoImagenDos{
+        width: 54%;
+    }
+
+    .agregar-productoArchivo {
+        border: 1px solid var(--fuente-azul);
+        border-radius: .25rem;
+        color: var(--fuente-azul);
+        font-size: 1rem;
+        width: 41%;
+    }
+}

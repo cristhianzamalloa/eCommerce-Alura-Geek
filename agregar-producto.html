@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek - Agregar producto</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/bases.css">
+        <link rel="stylesheet" href="./css/cabecera.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="./css/agregar-producto.css">
+    </head>
+    <body>
+        <header class="cabecera">
+            <div class="cabecera-logoInput">
+                <img class="cabecera-logo" src="./images/header/Logo.png" alt="logo">
+                <input class="cabecera-buscador" type="search" placeholder="¿Qué deseas buscar?"/>
+            </div>  
+            <button class="cabecera-boton"><a href="https://cristhianzamalloa.github.io/eCommerce-Alura-Geek/login.html">Login</a></button>
+            <img class="cabecera-lupa" src="./images/header/Lupa.png" alt="lupa">
+        </header>
+        <main>
+            <section class="agregar-producto">
+                <h2 class="agregar-productoTitulo tituloH2">Agregar nuevo producto</h2>
+                <input type="text" class="agregar-productoImagen" placeholder="Agregar una imagen para el producto" accept="image/png,image/jpeg" type="file">
+                <div class="agregar-productoContainer">
+                    <input type="text" class="agregar-productoImagenDos" placeholder="Arrastre para agregar una imagen para el producto" accept="image/png,image/jpeg" type="file">
+                    <p class="agregar-productoCondicional">O</p>
+                    <button class="agregar-productoArchivo">Busque en su dispositivo</button>
+                </div>
+                <form class="agregar-productoForm">
+                    <input type="text" class="agregar-productoInput input" placeholder="Nombre del producto">
+                    <input type="text" class="agregar-productoInput input" placeholder="Precio del producto" >
+                    <textarea type="text" class="agregar-productoInput textArea" placeholder="Descripción del producto" id="descripcion"></textarea>
+                    <button class="agregar-productoBoton boton">Agregar Producto</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-contacto">
+                <div class="footer-logoLista">
+                    <img class="footer-logo" src="./images/header/Logo.png" alt="logo">
+                    <ul class="footer-lista">
+                        <li class="footer-item">Quiénes somos</li>
+                        <li class="footer-item">Política de privacidad</li>
+                        <li class="footer-item">Programa de fidelidad</li>
+                        <li class="footer-item">Nuestras tiendas</li>
+                        <li class="footer-item">Quiero ser franquiciado</li>
+                        <li class="footer-item">Anuncie aquí</li>
+                    </ul>
+                </div>
+                <form class="footer-formulario">
+                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>                        <input type="text" class="footer-formulario-input input" id="nombre" placeholder="Nombre">                  
+                    <textarea type="text" class="footer-formulario-input textArea" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                    <button class="footer-formulario-enviar boton">Enviar mensaje</button>
+                </form>
+            </div>
+            
+            <div class="footer-autor">
+            <p>Desarrollado por Cristhian Zamalloa</br>Abril 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>
+

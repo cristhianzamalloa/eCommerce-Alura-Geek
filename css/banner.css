@@ -1,7 +1,7 @@
 .banner-imagen {
     background: url("../images/banner.jpg") no-repeat center / cover;
     height: 12rem;
-    width: 100%
+    width: 100%;
 }
 
 .banner-interno {

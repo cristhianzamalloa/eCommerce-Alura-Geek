@@ -43,42 +43,11 @@
 }
 
 .footer-formulario-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: .5rem;
     width: calc(100vw - 2rem);
 }
 
-.footer-formulario-inputCasilla {
-    border: none;
-    border-bottom: 2px solid #c8c8c8;
-    height: calc(3.5rem - 1.75rem);
-    padding-left: .875rem;
-    padding-top: 1.75rem;
-}
-
-#mensaje {
-    height: 5.125rem;
-    margin-top: 1rem;
-}
-
-.footer-formulario-inputCasilla::-webkit-input-placeholder {
-    left: .875rem;
-    position: absolute;
-    font-size: .75rem; 
-    top: .5rem;
-}
-
-#mensaje::-webkit-input-placeholder{
-    font-size: 1rem;
-}
-
-.footer-formulario-inputCasilla:focus::placeholder {
-    opacity: 0;
-} 
-
-.footer-enviar {
-    margin-bottom: 1rem;
+.footer-formulario-enviar {
+    margin: -.5rem 0 1rem 0rem;
 }
 
 .footer-autor {
@@ -107,13 +76,11 @@
     }
 
     .footer-logo {
-        padding-left: 2rem;
-        padding-bottom: 1rem;
+        padding: 0 0 1rem 2rem;
     }
 
     .footer-lista {
-        padding-left: 2rem;
-        padding-bottom: 2rem;
+        padding: 0 0 2rem 2rem;
     }
 
     .footer-item {
@@ -123,8 +90,7 @@
     .footer-formulario {
         height: 69.78%;
         width: 56.51%;
-        padding-right: 2rem;
-        padding-top: 2rem;
+        padding: 2rem 2rem 0 0;
     }
 
     .footer-formulario-input {

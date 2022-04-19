@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Geek - Login</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/bases.css">
-        <link rel="stylesheet" href="../css/cabecera.css">
-        <link rel="stylesheet" href="../css/footer.css">
-        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/bases.css">
+        <link rel="stylesheet" href="./css/cabecera.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/login.css">
     </head>
     <body>
         <header class="cabecera">
             <div class="cabecera-logoInput">
-                <img class="cabecera-logo" src="../images/header/Logo.png" alt="logo">
+                <img class="cabecera-logo" src="./images/header/Logo.png" alt="logo">
                 <input class="cabecera-buscador" type="search" placeholder="¿Qué deseas buscar?"/>
             </div>  
-            <button class="cabecera-boton">Login</button>
-            <img class="cabecera-lupa" src="../images/header/Lupa.png" alt="lupa">
+            <button class="cabecera-boton"><a href="https://cristhianzamalloa.github.io/eCommerce-Alura-Geek/login.html">Login</a></button>
+            <img class="cabecera-lupa" src="./images/header/Lupa.png" alt="lupa">
         </header>
         <main>
             <section class="login">
@@ -27,13 +27,13 @@
                     <input class="login-input" type="email" name="correo-electronico" id="correo-electronico" placeholder="Escriba su correo electrónico">
                     <input class="login-input" type="password" name="clave" id="clave" placeholder="Escriba su contraseña">
                 </form>
-                <button class="login-boton boton">Entrar</button>
+                <button class="login-boton boton" href="https://cristhianzamalloa.github.io/eCommerce-Alura-Geek/agregar-producto.html">Entrar</button>
             </section>
         </main>
         <footer>
             <div class="footer-contacto">
                 <div class="footer-logoLista">
-                    <img class="footer-logo" src="../images/header/Logo.png" alt="logo">
+                    <img class="footer-logo" src="./images/header/Logo.png" alt="logo">
                     <ul class="footer-lista">
                         <li class="footer-item">Quiénes somos</li>
                         <li class="footer-item">Política de privacidad</li>
@@ -44,21 +44,15 @@
                     </ul>
                 </div>
                 <form class="footer-formulario">
-                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>
-                    <div class="footer-formulario-input">
-                        <input type="text" class="footer-formulario-inputCasilla" id="nombre" placeholder="Nombre">                  
-                        <textarea type="text" class="footer-formulario-inputCasilla" id="mensaje" placeholder="Escribe tu mensaje"></textarea> 
-                    </div>
-                    <button class="footer-enviar boton">Enviar mensaje</button>
+                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>                        <input type="text" class="footer-formulario-input input" id="nombre" placeholder="Nombre">                  
+                    <textarea type="text" class="footer-formulario-input textArea" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                    <button class="footer-formulario-enviar boton">Enviar mensaje</button>
                 </form>
             </div>
-            
             <div class="footer-autor">
             <p>Desarrollado por Cristhian Zamalloa</br>Abril 2022</p>
             </div>
         </footer>
-
-
     </body>
 </html>
 

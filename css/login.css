@@ -1,6 +1,6 @@
 .login {
     align-items: center;
-    background-color: #e5e5e5;
+    background-color: var(--background-gris);
     display: flex;
     flex-direction: column;
     padding: 6rem 2.8125rem;
@@ -31,10 +31,6 @@
     left: 0.875rem;
     position: absolute;
     top: 0.5rem;
-}
-
-.login-input:focus::placeholder {
-    opacity: 0;
 }
 
 .login-boton {
