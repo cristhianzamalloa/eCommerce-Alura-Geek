@@ -100,17 +100,8 @@
     background: url("../../images/Video\ Juegos/6-VideoJuego.jpg") no-repeat center / 60%;
 }
 
-a.todos-icono-papelera::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f2ed";
-    color: var(--fuente-azul);
-    padding: 1rem;
-}
-    
-a.todos-icono-lapiz::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f044";
-    color: var(--fuente-azul);
+.todos-icono-delete {
+    padding-right: 1rem;
 }
 
 .todos-informacion {
