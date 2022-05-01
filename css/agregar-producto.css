@@ -4,23 +4,33 @@ main {
 }
 
 .agregar-producto {
-    height: 30rem;
+    height: 32rem;
 }
 
-.agregar-productoImagen {
-    background: var(--background-campo-imagenesInsertadas) url(../images/Simbolo.mas.png) 50% 30% no-repeat;
+.agregar-productoContainerMobile {
+    background: var(--background-campo-imagenesInsertadas);
     border: 1px dashed var(--borde-gris);
     box-sizing: border-box;
-    height: 25.92%;
+    color: #6B6B6B;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--raleway);
+    font-weight: 400;
+    font-size: .875rem;
+    height: 10rem;
     margin-bottom: 1rem;
+    text-align: center;
     width: 100%;
 }
 
-.agregar-productoImagen::-webkit-input-placeholder {
-    font-size: .875rem;
-    font-weight: 400;
-    padding: 3.5rem;
-    transform: translate(0, 1.75rem);
+.agregar-productoContainerMobile img {
+    height: 100%;
+    width: 100%;
+}
+
+.agregar-iconoUno {
+    width: 5%;
+    margin: 10% auto 5% auto;
 }
 
 .agregar-productoContainer{
@@ -30,6 +40,17 @@ main {
 .agregar-productoForm {
     display: flex;
     flex-direction: column;
+}
+
+.agregar-productoInput{
+    width: 100%;
+    margin-left: 0;
+}
+
+.container-input--invalid .agregar-productoInput{
+    border-bottom: 2px solid red;
+    margin-left: 0;
+    margin-bottom: .25rem;
 }
 
 .agregar-productoBoton{
@@ -45,7 +66,7 @@ main {
         height: 30rem;
     }
 
-    .agregar-productoImagen {
+    .agregar-productoContainerMobile {
         display: none;
     }
 
@@ -57,20 +78,31 @@ main {
         height: 27%;
     }
 
-    .agregar-productoImagenDos{
-        background: var(--background-campo-imagenesInsertadas) url(../images/Adicionar.Imagen.png) 50% 30% no-repeat;
+    .agregar-imagenDos {
+        background: var(--background-campo-imagenesInsertadas);
         border: 1px dashed var(--borde-gris);
         box-sizing: border-box;
-        padding: 5.5rem 2rem 2rem 2rem;
         height: 100%;
         width: 36%;
     }
 
-    .agregar-productoImagenDos::-webkit-input-placeholder {
-        position: relative;
-        top: 1rem;
-        white-space: pre-line;
+    .agregar-imagenDos p {
+        color: #6B6B6B;
+        font-size: .875rem;
         text-align: center;
+    }
+
+    .agregar-iconoDos{
+        margin: 10% 45% 5% 45%;        
+    }
+
+    .agregar-imagenDos.active {
+        border: 1px dashed var(--borde-gris);
+    }
+
+    .agregar-imagenDos img{
+        height: 100%;
+        width: 100%;
     }
 
     .agregar-productoCondicional {
@@ -100,7 +132,7 @@ main {
         padding: 0 18.03rem;       
     }
 
-    .agregar-productoImagenDos{
+    .agregar-imagenDos{
         width: 54%;
     }
 

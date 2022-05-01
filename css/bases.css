@@ -72,6 +72,12 @@ body {
     opacity: 0;
 }
 
+.messageError{
+    color:red;
+    font-size: .75rem;
+    padding-left: 1rem;
+}
+
 .textArea {
     border: none;
     border-bottom: 2px solid var(--borde-gris);

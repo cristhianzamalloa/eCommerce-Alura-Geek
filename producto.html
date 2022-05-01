@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/header/Logo.sin.texto.png">
         <title>Alura Geek - Producto</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/reset.css">
@@ -85,16 +86,24 @@
                         <li class="footer-item">Anuncie aquí</li>
                     </ul>
                 </div>
-                <form class="footer-formulario">
-                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>                        <input type="text" class="footer-formulario-input input" id="nombre" placeholder="Nombre">                  
-                    <textarea type="text" class="footer-formulario-input textArea" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
-                    <button class="footer-formulario-enviar boton">Enviar mensaje</button>
+                <form class="footer-formulario" novalidate>
+                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>                        
+                    <div class="container-input">
+                        <input type="text" class="footer-formulario-input input" id="nombre" placeholder="Nombre" required data-type="nombre" pattern="[A-Za-z\s]{0,50}">
+                        <span class="messageError"></span>
+                    </div>
+                    <div class="container-input">
+                        <textarea type="text" class="footer-formulario-input textArea" id="mensaje" placeholder="Escribe tu mensaje" required data-type="mensaje" maxlength="300"></textarea>
+                        <span class="messageError"></span>
+                    </div>
+                    <button class="footer-formulario-enviar boton" id="enviar" disabled>Enviar mensaje</button>
                 </form>
             </div>
             <div class="footer-autor">
             <p>Desarrollado por Cristhian Zamalloa</br>Abril 2022</p>
             </div>
         </footer>
+        <script src="./js/validacion.js"></script>
     </body>
 </html>
 

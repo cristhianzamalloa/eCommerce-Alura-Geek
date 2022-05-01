@@ -29,6 +29,12 @@
     width: 6.8125rem;
 }
 
+.container-input--invalid .login-input{
+    border-bottom: 2px solid red;
+    margin-left: 0;
+    margin-bottom: .25rem;
+}
+
 @media screen and (min-width:650px) {
     .login{
         padding: 2.8125rem 32.16% 3.8125rem 32.16%;
@@ -38,7 +44,6 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin-right: 0.875rem;
         width: 100%;
     }
 }
