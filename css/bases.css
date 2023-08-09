@@ -1,0 +1,114 @@
+/* --DEFINICION DE VARIABLES -- */
+:root {
+    --altura-cabecera-desktop: 7.95rem;
+    --boton-azul: #2A7AE4; 
+    --fuente-azul: #2A7AE4;
+    --titulo-gris: #464646;
+    --raleway: 'Raleway', sans-serif;
+    --borde-gris: #c8c8c8;
+    --background-gris: #e5e5e5;
+    --background-campo-imagenesInsertadas: #ffffff;
+    
+}
+
+body {
+    font-family: var(--raleway);
+}
+
+.boton {
+    background: var(--boton-azul);
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+.boton a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.botonVer {
+    background: none;
+    border: none;
+    color: var(--fuente-azul);
+    font-size: .875rem;
+    font-weight: 700; 
+    padding: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.botonVer a {
+    color: var(--fuente-azul);
+    text-decoration: none;
+}
+
+.cabecera-boton a {
+    color: var(--fuente-azul);
+    text-decoration: none;
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid var(--borde-gris);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--raleway);
+    font-size: 1rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    padding: 1.75rem 0 0 .875rem;
+}
+
+::-webkit-input-placeholder {
+    font-family: var(--raleway);
+    font-size: .75rem;
+    transform: translate(0, -1.75rem);
+}
+
+:focus::placeholder {
+    opacity: 0;
+}
+
+.messageError{
+    color:red;
+    font-size: .75rem;
+    padding-left: 1rem;
+}
+
+.textArea {
+    border: none;
+    border-bottom: 2px solid var(--borde-gris);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--raleway);
+    font-size: 1rem;
+    height: 5.125rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0 0 .875rem;
+}
+
+.textArea::-webkit-input-placeholder {
+    font-family: var(--raleway);
+    font-size: 1rem;
+    transform: none;
+}
+
+.tituloH2 {
+    color: var(--titulo-gris);
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1180px) {
+    .tituloH2 {
+        font-size: 2rem;
+    }
+    
+}
+
+
+

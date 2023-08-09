@@ -1,0 +1,82 @@
+.productos-similares {
+    margin-top: 1rem;
+}
+
+.productos-similaresTitulo {
+    color: var(--titulo-gris);
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.productos-similares-conjunto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos-similares-individual {
+    display: flex;
+    flex-direction: column;
+    width: 47.56%;
+}
+
+.productos-similares-individualImagen {
+    background: center / cover no-repeat ;
+    height: 10.875rem;
+    margin-bottom: .5rem;
+}
+
+.productos-similares-individualNombre {
+    font-size: .875rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.productos-similares-individualPrecio {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.productos-similares-individualBoton {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:650px) {
+    .productos-similares{
+        height: calc(100vh - 6rem);
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .productos-similares-conjunto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:  wrap;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+    
+    .productos-similares-individual {
+        justify-content: space-between;
+        line-height: 1.0275rem;
+        padding-bottom: 2rem;
+        width: 23.3%;
+    }
+    
+    .productos-similares-individualBoton {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .productos-similares{
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    .productos-similares-individual {
+        width: calc((100% - 5rem)/6);
+    }
+}

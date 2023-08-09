@@ -1,0 +1,33 @@
+.categoria {
+    height: 38.5rem;
+    overflow: hidden;
+}
+
+#consolas, #videoJuegos {
+    height: 36.5rem;
+}
+
+@media screen and (min-width:650px) {
+    .categoria {
+        height: 21.5rem;
+    }
+    
+    #consolas, #videoJuegos {
+        height: 20.5rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (min-width:1180px) {
+
+    .categoria {
+        height: 24rem;
+    }
+
+    #consolas, #videoJuegos {
+        height: 24rem;
+    }
+
+
+}

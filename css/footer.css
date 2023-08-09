@@ -1,0 +1,145 @@
+.footer-contacto {
+    align-items: center;
+    background: #eaf2fd;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    height: 21%;
+    text-align: start;
+    width: 100%;
+}
+
+.footer-logoLista {
+    height: 47.02%;
+    width: 91.11%;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+
+.footer-logo {
+    height: 19.23%;
+    width: 53.66%;
+    padding-bottom: 1rem;
+}
+
+.footer-lista{
+    font-weight: 500;
+}
+
+.footer-item{
+    padding-bottom: 1rem;
+}
+
+.footer-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100vw - 2rem);
+}
+
+.footer-formulario-titulo {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.footer-formulario-input {
+    width: calc(100vw - 2rem);
+}
+
+.footer-formulario-enviar {
+    margin: 0rem 0 1rem 0rem;
+}
+
+.footer-autor {
+    background: linear-gradient(45deg, #36042b, #0f072d);
+    color: white;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+.container-input--invalid .footer-formulario-input{
+    border-bottom: 2px solid red;
+    margin-bottom: .25rem;
+}
+
+@media screen and (min-width:650px) {
+    
+    .footer-contacto {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 47.4%;
+    }
+    
+    .footer-logoLista {
+        height: 69.78%;
+        width: 33%;
+        text-align: left;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .footer-logo {
+        padding: 0 0 1rem 2rem;
+    }
+
+    .footer-lista {
+        padding: 0 0 2rem 2rem;
+    }
+
+    .footer-item {
+        padding-bottom: 1.5rem;
+    }
+
+    .footer-formulario {
+        height: 69.78%;
+        width: 56.51%;
+        padding: 2rem 2rem 0 0;
+    }
+
+    .footer-formulario-input {
+        width: 56.51vw;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .footer-contacto {
+        align-items: initial;
+        flex-direction: row;
+        padding: 4rem 9.5rem;
+        width: 78.89%;        
+    }
+
+    .footer-logoLista {
+        display: flex;
+        width: 40.85%;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-logo {
+        width: 41.16%;
+        padding: 0;
+    }
+
+    .footer-lista {
+        padding: 0;
+        width: 41.16%;
+    }
+    
+    .footer-formulario {
+        padding: 0;
+        width: 51.94%;
+    }
+    
+    .footer-formulario-input {
+        width: calc(51.94vw - 9.5rem);
+    }
+
+    .footer-enviar {
+        margin-bottom: 0rem;
+    }
+    
+}

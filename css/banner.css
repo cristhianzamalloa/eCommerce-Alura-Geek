@@ -1,0 +1,55 @@
+.banner-imagen {
+    background: url("../images/banner.jpg") no-repeat center / cover;
+    height: 12rem;
+    width: 100%;
+}
+
+.banner-interno {
+    color: #FFFFFF;
+    left: 1rem;
+    position: absolute;
+    top: 9.375rem;
+}
+
+.banner-titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.banner-descripcion {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+@media screen and (min-width:650px) {
+    .banner-imagen {
+        height: 22rem;
+    }
+
+    .banner-interno {
+        left: 2rem;
+        top: 14.56rem
+    }
+
+    .banner-titulo {
+        font-size: 3.25rem;
+    }
+
+    .banner-descripcion {
+        font-size: 1.375rem;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .banner-interno {
+        left: 9.5rem;
+        top: 16.562rem;
+    }
+       
+    .banner-boton { 
+        font-size: 1rem;
+        padding: 1rem;
+    }   
+}

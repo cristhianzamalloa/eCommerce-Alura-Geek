@@ -1,0 +1,161 @@
+.categoria-productosConjunto {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-left: 1rem;
+}
+
+.categoria-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc((100% - 2rem)/2);
+    padding-right: 1rem;
+}
+
+.categoria-producto-imagen {
+    height: 10.875rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/*CATEGORIA STAR WARS*/
+.categoria-producto-imagen--starWarsUno {
+    background: url("../../images/Star\ Wars/1-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsDos {
+    background: url("../../images/Star\ Wars/2-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsTres {
+    background: url("../../images/Star\ Wars/3-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsCuatro {
+    background: url("../../images/Star\ Wars/4-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsCinco {
+    background: url("../../images/Star\ Wars/5-StarWars.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--starWarsSeis {
+    background: url("../../images/Star\ Wars/6-StarWars.jpg") no-repeat center / cover;
+}
+
+/*CATEGORIA CONSOLAS*/
+.categoria-producto-imagen--consolaUno {
+    background: url("../../images/Consolas/1-Consola.jpeg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaDos {
+    background: url("../../images/Consolas/2-Consola.png") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaTres {
+    background: url("../../images/Consolas/3-Consola.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaCuatro {
+    background: url("../../images/Consolas/4-Consola.jpg") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaCinco {
+    background: url("../../images/Consolas/5-Consola.png") no-repeat center / cover;
+}
+
+.categoria-producto-imagen--consolaSeis {
+    background: url("../../images/Consolas/6-Consola.jpeg") no-repeat center / cover;
+}
+
+/*CATEGORIA VIDEO JUEGOS*/
+.categoria-producto-imagen--videoJuegoUno {
+    background: url("../../images/Video\ Juegos/1-VideoJuego.jpg") no-repeat center / 72%;
+}
+
+.categoria-producto-imagen--videoJuegoDos {
+    background: url("../../images/Video\ Juegos/2-VideoJuego.jpg") no-repeat center / 72%;
+}
+
+.categoria-producto-imagen--videoJuegoTres {
+    background: url("../../images/Video\ Juegos/3-VideoJuego.jpg") no-repeat center / 72%;
+}
+
+.categoria-producto-imagen--videoJuegoCuatro {
+    background: url("../../images/Video\ Juegos/4-VideoJuego.jpg") no-repeat center / 72%;
+}
+
+.categoria-producto-imagen--videoJuegoCinco {
+    background: url("../../images/Video\ Juegos/5-VideoJuego.jpg") no-repeat center / 72%;
+}
+
+.categoria-producto-imagen--videoJuegoSeis {
+    background: url("../../images/Video\ Juegos/6-VideoJuego.jpg") no-repeat center / 72%;
+}
+
+/*CONFIGURACIÓN NOMBRE, PRECIO Y BOTÓN*/
+.categoria-producto-nombre {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.categoria-producto-precio {
+    font-size: 1.1875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width:650px) {
+    .categoria-productosConjunto {
+        flex-wrap: wrap;    
+        padding-left: 2rem;
+    }
+    
+    .categoria-producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc((100% - 4rem)/4);
+        padding-right: 1rem;
+    }
+
+    .categoria-producto-imagen {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    
+    .categoria-producto-nombre {
+        font-size: 0.875rem;
+    }
+
+    .categoria-producto-precio {
+        font-size: 1rem;
+    }
+
+    .categoria-producto-boton {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .categoria-productosConjunto{
+        padding-left: 9.5rem;
+        padding-right: 9.5rem;
+    }
+    .categoria-producto {
+        width: calc((100% - 5rem)/6);
+        padding-right: 1rem;
+    }   
+
+    .categoria-producto-imagen {
+        height: 10.05rem;
+        width: initial;
+        margin-bottom: 0.5rem;
+    }
+
+    #categoria-producto-ultimo {
+        padding-right: 0;
+    }
+}

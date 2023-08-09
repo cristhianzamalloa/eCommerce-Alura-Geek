@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/header/Logo.sin.texto.png">
+        <title>Alura Geek - Agregar producto</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/bases.css">
+        <link rel="stylesheet" href="./css/cabecera.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="./css/agregar-producto.css">     
+    </head>
+    <body>
+        <header class="cabecera">
+            <div class="cabecera-logoInput">
+                <a href="https://cristhianzamalloa.github.io/eCommerce-Alura-Geek/"><img class="cabecera-logo" src="./images/header/Logo.png" alt="logo"></a>
+                <input class="cabecera-buscador input" type="search" placeholder="¿Qué deseas buscar?"/>
+            </div>  
+            <button class="cabecera-boton"><a href="https://cristhianzamalloa.github.io/eCommerce-Alura-Geek/login.html">Login</a></button>
+            <img class="cabecera-lupa" src="./images/header/Lupa.png" alt="lupa">
+        </header>
+        <main>
+            <section class="agregar-producto">
+                <h2 class="agregar-productoTitulo tituloH2">Agregar nuevo producto</h2>                
+                <div type="button" class="agregar-productoContainerMobile">
+                    <input class="agregar-iconoUno" type="image" src="./images/Simbolo.mas.png" alt="Icono símbolo de más">
+                    <p>Agregar una imagen para el producto</p>
+                    <input class="agregar-buscarimagenMobile" type="file" hidden>
+                </div>
+                <div class="agregar-productoContainer">
+                    <div class="agregar-imagenDos">
+                        <input class="agregar-iconoDos" type="image" src="./images/Adicionar.Imagen.png" alt="Icono simbolo de imagen">
+                        <p>Arrastre para agregar una imagen para el producto</p>
+                    </div>
+                    <p class="agregar-productoCondicional">O</p>
+                    <button class="agregar-productoArchivo">Busque en su dispositivo</button>
+                    <input class="agregar-buscarArchivo" type="file" hidden>
+                </div>
+                <form class="agregar-productoForm" novalidate>
+                    <div class="container-input">
+                        <input type="text" class="agregar-productoInput input" placeholder="Nombre del producto" name="nombreProducto" id="nombreProducto" required data-type="nombreProducto" pattern="[A-Za-z\s]{0,20}">
+                        <span class="messageError"></span>
+                    </div>
+                    <div class="container-input">
+                        <input type="number" class="agregar-productoInput input" placeholder="Precio del producto" name="precio" id="precio" required data-type="precio">
+                        <span class="messageError"></span>
+                    </div>
+                    <div class="container-input">
+                        <textarea type="text" class="agregar-productoInput textArea" placeholder="Descripción del producto" name="descripcion" id="descripcion" required data-type="descripcion" maxlength="150"></textarea>
+                        <span class="messageError"></span> 
+                    </div>
+                    <button class="agregar-productoBoton boton" id="agregar" disabled>Agregar Producto</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-contacto">
+                <div class="footer-logoLista">
+                    <img class="footer-logo" src="./images/header/Logo.png" alt="logo">
+                    <ul class="footer-lista">
+                        <li class="footer-item">Quiénes somos</li>
+                        <li class="footer-item">Política de privacidad</li>
+                        <li class="footer-item">Programa de fidelidad</li>
+                        <li class="footer-item">Nuestras tiendas</li>
+                        <li class="footer-item">Quiero ser franquiciado</li>
+                        <li class="footer-item">Anuncie aquí</li>
+                    </ul>
+                </div>
+                <form class="footer-formulario" novalidate>
+                    <h3 class="footer-formulario-titulo">Hable con nosotros</h3>                        
+                    <div class="container-input">
+                        <input type="text" class="footer-formulario-input input" id="nombre" placeholder="Nombre" required data-type="nombre" pattern="[A-Za-z\s]{0,50}">
+                        <span class="messageError"></span>
+                    </div>
+                    <div class="container-input">
+                        <textarea type="text" class="footer-formulario-input textArea" id="mensaje" placeholder="Escribe tu mensaje" required data-type="mensaje" maxlength="300"></textarea>
+                        <span class="messageError"></span>
+                    </div>
+                    <button class="footer-formulario-enviar boton" id="enviar" disabled>Enviar mensaje</button>
+                </form>
+            </div>
+            <div class="footer-autor">
+            <p>Desarrollado por Cristhian Zamalloa</br>Abril 2022</p>
+            </div>
+        </footer>
+        <script src="./js/validacion.js"></script>
+        <script src="./js/cargaImagenes.js"></script>
+    </body>
+</html>
+

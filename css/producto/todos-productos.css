@@ -1,0 +1,170 @@
+.todos-productos {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.todos-contenido {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+.todos-card {
+    display: flex;
+    flex-direction: column;
+    height: 17rem;
+    width: calc((100% - 1rem)/2);
+}
+
+.todos-bloqueImagen {
+    box-sizing: border-box;
+    display: flex;
+    height: 65%;
+    justify-content: right;
+}
+
+.todos-iconos{
+    padding: .6875rem 1rem 0 0;
+}
+
+#starWars1 {
+    background: url("../../images/Star\ Wars/1-StarWars.jpg") no-repeat center / 90%;
+}
+
+#starWars2 {
+    background: url("../../images/Star\ Wars/2-StarWars.jpg") no-repeat center / 90%;
+}
+
+#starWars3 {
+    background: url("../../images/Star\ Wars/3-StarWars.jpg") no-repeat center / 90%;
+}
+
+#starWars4 {
+    background: url("../../images/Star\ Wars/4-StarWars.jpg") no-repeat center / 90%;
+}
+
+#starWars5 {
+    background: url("../../images/Star\ Wars/5-StarWars.jpg") no-repeat center / 90%;
+}
+
+#starWars6 {
+    background: url("../../images/Star\ Wars/6-StarWars.jpg") no-repeat center / 90%;
+}
+
+#consolas1 {
+    background: url("../../images/Consolas/1-Consola.jpeg") no-repeat center / 80%;
+}
+
+#consolas2 {
+    background: url("../../images/Consolas/2-Consola.png") no-repeat center / 100%;
+}
+
+#consolas3 {
+    background: url("../../images/Consolas/3-Consola.jpg") no-repeat center / 100%;
+}
+
+#consolas4 {
+    background: url("../../images/Consolas/4-Consola.jpg") no-repeat center / 100%;
+}
+
+#consolas5 {
+    background: url("../../images/Consolas/5-Consola.png") no-repeat center / 100%;
+}
+
+#consolas6 {
+    background: url("../../images/Consolas/6-Consola.jpeg") no-repeat center / 100%;
+}
+
+#videoJuegos1 {
+    background: url("../../images/Video\ Juegos/1-VideoJuego.jpg") no-repeat center / 60%;
+}
+
+#videoJuegos2 {
+    background: url("../../images/Video\ Juegos/2-VideoJuego.jpg") no-repeat center / 60%;
+}
+
+#videoJuegos3 {
+    background: url("../../images/Video\ Juegos/3-VideoJuego.jpg") no-repeat center / 60%;
+}
+
+#videoJuegos4 {
+    background: url("../../images/Video\ Juegos/4-VideoJuego.jpg") no-repeat center / 60%;
+}
+
+#videoJuegos5 {
+    background: url("../../images/Video\ Juegos/5-VideoJuego.jpg") no-repeat center / 60%;
+}
+
+#videoJuegos6 {
+    background: url("../../images/Video\ Juegos/6-VideoJuego.jpg") no-repeat center / 60%;
+}
+
+.todos-icono-delete {
+    padding-right: 1rem;
+}
+
+.todos-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.todos-productos-informacionNombre { 
+    font-size: .875rem;
+    font-weight: 500;
+    height: 1.75rem;
+    margin-bottom: .5rem;
+}
+
+.todos-productos-informacionPrecio {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.todos-productos-informacionSku {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width:650px) {
+    .todos-parteSuperior {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .todos-titulo {
+        margin-bottom: 0;
+    }
+
+    .todos-contenido {
+        justify-content: flex-start;
+        margin-right: -1rem;
+    }
+
+    .todos-card {
+        margin-right: 1rem;
+        width: calc((100% - 4rem)/4);
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .todos-productos {
+        padding: 4rem 9.5rem 0 9.5rem;
+    }
+    
+    .todos-agregar {
+        font-size: 1rem;
+    }
+    
+    .todos-card {
+        margin-bottom: 4rem;
+        width: calc((100% - 6rem)/6);
+    }
+
+}
